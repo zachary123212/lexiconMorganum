@@ -1,0 +1,13 @@
+{% extends "bootstrap.html" %}
+{% block content %}
+{% for word in englishWords %}
+<p> {{word}}
+ </p>
+ {% endfor %}
+
+{% for word in latinWords %}
+<p> {{word}}
+ </p> 
+ {% endfor %}
+
+{% endblock %}

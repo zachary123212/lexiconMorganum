@@ -1,0 +1,200 @@
+[
+    {
+        "parts": "amō amāre amāvī amātum",
+        "class": "1",
+        "conjugations": {
+            "present": {
+                "indicative": {
+                    "active": [
+                        "amō",
+                        "amās",
+                        "amat",
+                        "amāmus",
+                        "amātis",
+                        "amant"
+                    ],
+                    "passive": [
+                        "amor",
+                        "amāris",
+                        "amātur",
+                        "amāmur",
+                        "amāminī",
+                        "amantur"                    
+                    ]
+                },
+                "subjunctive": {
+                    "active": [
+                        "amem",
+                        "amēs",
+                        "amet",
+                        "amēmus",
+                        "amētis",
+                        "ament"                    
+                    ],
+                    "passive": [
+                        "amer",
+                        "amēris",
+                        "amētur",
+                        "amēmur",
+                        "amēminī",
+                        "amentur"
+                    ]
+                }
+            },
+            "imperfect": {
+                "indicative": {
+                    "active": [
+                        "amābam",
+                        "amābās",
+                        "amābat",
+                        "amābāmus",
+                        "amābātis",
+                        "amābant"                    
+                    ],
+                    "passive": [
+                        "amābar",
+                        "amābāris",
+                        "amābātur",
+                        "amābāmur",
+                        "amābāminī",
+                        "amābantur"                    
+                    ]
+                },
+                "subjunctive": {
+                    "active": [
+                        "amārem",
+                        "amārēs",
+                        "amāret",
+                        "amārēmus",
+                        "amārētis",
+                        "amārent"                    
+                    ],
+                    "passive": [
+                        "amārer",
+                        "amārēris",
+                        "amārētur",
+                        "amārēmur",
+                        "amārēminī",
+                        "amārentur"
+                    ]
+                }
+            },
+            "future": {
+                "indicative": {
+                    "active":  [
+                        "amābō",
+                        "amābis",
+                        "amābit",
+                        "amābimus",
+                        "amābitis",
+                        "amābunt"                    
+                    ],
+                    "passive": [
+                        "amābor",
+                        "amāberis",
+                        "amābitur",
+                        "amābimur",
+                        "amābiminī",
+                        "amābuntur"
+                    ]
+                }
+            },
+            "perfect": {
+                "indicative": {
+                    "active": [
+                        "amāvī",
+                        "amāvistī",
+                        "amāvit",
+                        "amāvimus",
+                        "amāvistis",
+                        "amāvērunt"
+                    ],
+                    "passive": [
+                        "amātus sum",
+                        "amātus es",
+                        "amātus est",
+                        "amātī sumus",
+                        "amātī estis",
+                        "amātī sunt"                    
+                    ]
+                },
+                "subjunctive": {
+                    "active": [
+                        "amāverim",
+                        "amāverīs",
+                        "amāverit",
+                        "amāverīmus",
+                        "amāverītis",
+                        "amāverint"
+                    ],
+                    "passive": [
+                        "amātus sim",
+                        "amātus sīs",
+                        "amātus sit",
+                        "amātī sīmus",
+                        "amātī sītis",
+                        "amātī sint"
+                    ]
+                }
+            },
+            "pluperfect": {
+                "indicative": {
+                    "active": [
+                        "amāveram",
+                        "amāverās",
+                        "amāverat",
+                        "amāverāmus",
+                        "amāverātis",
+                        "amāverant"                    
+                    ],
+                    "passive": [
+                        "amātus eram",
+                        "amātus erās",
+                        "amātus erat",
+                        "amātī erāmus",
+                        "amātī erātis",
+                        "amātī erant"
+                    ]
+                },
+                "subjunctive": {
+                    "active": [
+                        "amāvissem",
+                        "amāvissēs",
+                        "amāvisset",
+                        "amāvissēmus",
+                        "amāvissētis",
+                        "amāvissent"
+                    ],
+                    "passive": [
+                        "amātus essem",
+                        "amātus essēs",
+                        "amātus esset",
+                        "amātī essēmus",
+                        "amātī essētis",
+                        "amātī essent"
+                    ]
+                }
+            },
+            "future perfect": {
+                "indicative": {
+                    "active": [
+                        "amāverō",
+                        "amāveris",
+                        "amāverit",
+                        "amāverimus",
+                        "amāveritis",
+                        "amāverint"
+                    ],
+                    "passive": [
+                        "amātus erō",
+                        "amātus eris",
+                        "amātus erit",
+                        "amātī erimus",
+                        "amātī eritis",
+                        "amātī erunt"                    
+                    ]
+                }
+            }
+        }
+    }
+]
