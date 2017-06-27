@@ -1,13 +1,26 @@
 {% extends "bootstrap.html" %}
 {% block content %}
-{% for word in englishWords %}
-<p> {{word}}
- </p>
- {% endfor %}
 
-{% for word in latinWords %}
-<p> {{word}}
- </p> 
+<div class="container">
+  <h2>{{ title }}</h2>
+  <p>{{ subtitle }}</p>            
+  <table class="table table-bordered">
+  	<thead>
+      <tr>
+        <th>English Word</th>
+        <th>Latin Word</th>
+      </tr>
+    </thead>
+    <tbody> 
+        {% for key in englishToLatin|keys %}
+         <tr> <td class="col-md-6">{{key}}</td> 
+ <td class="col-md-6">{{englishToLatin[key]}}</td> </tr>
  {% endfor %}
+    </tbody>
+  </table>
+</div>
+
 
 {% endblock %}
+
+

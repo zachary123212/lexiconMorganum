@@ -7,14 +7,17 @@ $db = new PDO("mysql:host=localhost;dbname=morganum",
 
 $entries = $db->query("SELECT englishword, latinword FROM dictionary;");
 
-$latinWords = [];
-$englishWords = [];
+$englishToLatin = [];
+//$latinWords = [];
+//$englishWords = [];
 
 while ($entry = $entries->fetch()) {
-	$englishWords[] = $entry["englishword"];
-	$latinWords[] = $entry["latinword"];
+	$englishToLatin[$entry["englishword"]] = $entry["latinword"];
+	//$englishWords[] = $entry["englishword"];
+	//$latinWords[] = $entry["latinword"];
 }
 
-print $twig->render("index.html", ["englishWords" => $englishWords, "latinWords" => $latinWords]); 
+print $twig->render("index.html", ["englishToLatin" => $englishToLatin, "title" => "Lexicon Morganum",
+	"subtitle" => "An English-Latin Dictionary of Modern Words:"]); 
 
 ?>

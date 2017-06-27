@@ -1,9 +1,22 @@
  [
  	{
         "englishword" : "dog",
-        "latinword" : "canus" },
-      {
+        "latinword" : "canis" 
+    },
+    {
       	"englishword" : "cat",
         "latinword" : "cattus"
-      }
-        ]
+    },
+    {
+      	"englishword" : "flower",
+        "latinword" : "flos"
+    },
+    {
+      	"englishword" : "man",
+        "latinword" : "homine"
+    },
+    {
+      	"englishword" : "woman",
+        "latinword" : "femina"
+    }
+    ]
