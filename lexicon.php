@@ -8,13 +8,9 @@ $db = new PDO("mysql:host=localhost;dbname=morganum",
 $entries = $db->query("SELECT englishword, latinword FROM dictionary;");
 
 $englishToLatin = [];
-//$latinWords = [];
-//$englishWords = [];
 
 while ($entry = $entries->fetch()) {
 	$englishToLatin[$entry["englishword"]] = $entry["latinword"];
-	//$englishWords[] = $entry["englishword"];
-	//$latinWords[] = $entry["latinword"];
 }
 
 print $twig->render("index.html", ["englishToLatin" => $englishToLatin, "title" => "Lexicon Morganum",
