@@ -10,13 +10,11 @@ $conn = new mysqli($servername, $username, $password);
 // Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
-} 
+}
 
 // Create database
 $sql = "CREATE DATABASE IF NOT EXISTS morganum;";
-if ($conn->query($sql) === TRUE) {
-    echo "Connection successful. Database exists.";
-} else {
+if ($conn->query($sql) === FALSE) {
     echo "Error creating database: " . $conn->error;
 }
 $db = new PDO("mysql:host=" . $servername . ";dbname=" . $dbname, $username,

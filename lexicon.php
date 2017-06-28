@@ -14,6 +14,6 @@ while ($entry = $entries->fetch()) {
 }
 
 print $twig->render("index.html", ["englishToLatin" => $englishToLatin, "title" => "Lexicon Morganum",
-	"subtitle" => "An English-Latin Dictionary of Modern Words:"]); 
+	"subtitle" => "An English-Latin Dictionary of Modern Words:"]);
 
 ?>

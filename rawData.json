@@ -1,7 +1,19 @@
  [
+    {
+        "englishword" : "leader",
+        "latinword" : "dux"
+    },
+    {
+        "englishword" : "daughter",
+        "latinword" : "filiae"
+    },
  	{
         "englishword" : "dog",
-        "latinword" : "canis" 
+        "latinword" : "canis"
+    },
+    {
+        "englishword" : "death",
+        "latinword" : "mortem"
     },
     {
       	"englishword" : "cat",

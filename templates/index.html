@@ -8,13 +8,13 @@
         <div class="span">
             <form action = "form.php" method="get" id="custom-search-form" class="form-group">
                 <div class="input-append span">
-                    <input type="text" name = "search" class="search-query" placeholder="Search">
+                    <input required type="text" name = "search" class="search-query" placeholder="Search">
                     <button type="submit" class="btn btn-default btn-sm"><i class="glyphicon glyphicon-search"></i></button>
                 </div>
             </form>
         </div>
   </div>
-</div>                  
+</div>
   <table class="table table-bordered">
   	<thead>
       <tr>
@@ -22,9 +22,9 @@
         <th>Latin Word</th>
       </tr>
     </thead>
-    <tbody> 
+    <tbody>
         {% for key in englishToLatin|keys %}
-         <tr> <td class="col-md-6">{{key}}</td> 
+         <tr> <td class="col-md-6">{{key}}</td>
  <td class="col-md-6">{{englishToLatin[key]}}</td> </tr>
  {% endfor %}
     </tbody>
