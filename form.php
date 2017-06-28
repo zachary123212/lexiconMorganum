@@ -7,13 +7,21 @@ $db = new PDO("mysql:host=localhost;dbname=morganum",
 "root", "root");
 
 $db->query("USE morganum;");
-$results = $db->query("SELECT * FROM dictionary WHERE englishword LIKE '$item';");
 
-if ($results->rowCount() == 0){ 
+$resultsEnglish = $db->query("SELECT * FROM dictionary WHERE englishword LIKE
+    '$item';");
+
+$resultsLatin = $db->query("SELECT * FROM dictionary WHERE latinword LIKE
+    '$item';");
+
+if (($resultsEnglish->rowCount() == 0) && ($resultsLatin->rowCount() == 0)){
 	print("No results");
 } else {
-	while($row = $results->fetch()){
-    	print("{$row['latinword']}");
-	}
+	while($row = $resultsEnglish->fetch()){
+    	print("{$row['latinword']}\n");
+    }
+    while($row = $resultsLatin->fetch()){
+        print("{$row['englishword']}\n");
+    }
 }
 ?>
