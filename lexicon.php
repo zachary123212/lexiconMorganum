@@ -13,7 +13,7 @@ while ($entry = $entries->fetch()) {
 	$englishToLatin[$entry["englishword"]] = $entry["latinword"];
 }
 
-print $twig->render("index.html", ["englishToLatin" => $englishToLatin, "title" => "Lexicon Morganum",
+print $twig->render("index.html", ["englishToLatin" => $englishToLatin, "title" => "Lexicon Morganianum",
 	"subtitle" => "An English-Latin Dictionary of Modern Words:"]);
 
 ?>

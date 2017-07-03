@@ -5,6 +5,7 @@ $username = "root";
 $password = "root";
 $dbname = "morganum";
 
+
 // Create connection
 $conn = new mysqli($servername, $username, $password);
 // Check connection
@@ -17,10 +18,19 @@ $sql = "CREATE DATABASE IF NOT EXISTS morganum;";
 if ($conn->query($sql) === FALSE) {
     echo "Error creating database: " . $conn->error;
 }
+$conn->close();
 $db = new PDO("mysql:host=" . $servername . ";dbname=" . $dbname, $username,
 $password);
 
-$conn->close();
+
+
+try{
+	$db = new PDO("mysql:host=" . $servername . ";dbname=" . $dbname, $username,
+	$password);
+} catch (PDOException $e){
+	die ('Error: '.$e->getMessage().' Code: '.$e->getCode());
+}
+
 
 $db->query("DROP TABLE IF EXISTS dictionary;");
 $db->query("CREATE TABLE dictionary (id INT AUTO_INCREMENT
